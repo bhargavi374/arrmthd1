@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h3>
+    15.Game Score Tracker
+    Aplayer earns points. Track their total score and notify them when
+    they reach milestones (100, 500, 1000 points).
+   </h3> 
+   <script>
+    function trackGameScore() {
+    let score = parseInt(prompt("Enter your current score:"));
+    if (score >= 1000) {
+        console.log("Congratulations! You've reached 1000 points!");
+    } else if (score >= 500) {
+        console.log("Congratulations! You've reached 500 points!");
+    } else if (score >= 100) {
+        console.log("Congratulations! You've reached 100 points!");
+    } else {
+        console.log("Keep playing to reach a milestone!");
+    }
+}
+   </script>
+</body>
+</html>

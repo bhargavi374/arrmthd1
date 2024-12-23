@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Employee Shift Check
+        Given an employee's work hours, print "Night Shift" if they work
+        between 10 PMand6AM;otherwise, print "Day Shift."</h3>
+       <script>
+       function shift() {
+           let start = Number(prompt("enter the start time:"));
+           let ampm = prompt("is the start time am or pm:").toLowerCase();
+           let end = Number(prompt("enter the end time:"));
+           if (start >= 10 && ampm == "pm" && end <= 6) {
+               console.log(`Night shift`);
+           }
+           else {
+               console.log(`day shift`);
+           }
+       }
+    </script>
+</body>
+</html>

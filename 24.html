@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        24.Fuel Efficiency Check
+        Given fuel used and distance, calculate and print fuel efficiency (km/l).
+    </h3>
+    <script>function calculateFuelEfficiency() {
+        let distance = parseFloat(prompt("Enter the distance traveled (in kilometers):"));
+        let fuelUsed = parseFloat(prompt("Enter the amount of fuel used (in liters):"));
+        let fuelEfficiency = distance / fuelUsed;
+    
+        console.log("Your fuel efficiency is: " + fuelEfficiency.toFixed(2) + " km/liter");
+    }</script>
+</body>
+</html>

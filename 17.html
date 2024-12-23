@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        17.Loan Eligibility Check
+ Given a person’s monthly income and credit score, check if they qualify
+ for a loan.
+    </h3>
+    <script>
+        function checkLoanEligibility() {
+    let monthlyIncome = parseFloat(prompt("Enter your monthly income:"));
+    let creditScore = parseInt(prompt("Enter your credit score:"));
+    if (monthlyIncome >= 10000 && creditScore >= 700) {
+        alert("You are eligible for a loan!");
+    } else {
+        alert("You are not eligible for a loan.");
+    }
+}
+    </script>
+</body>
+</html>

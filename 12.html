@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        12.Calculate Weekly Wages
+        Calculate an employee's weekly wage based on their hours. Pay
+        overtime (1.5x) for hours above 40.</h3>
+        <script>function calculateWeeklyWages() {
+            let hoursWorked = parseFloat(prompt("Enter the number of hours worked in a week:"));
+            let hourlyRate = parseFloat(prompt("Enter your hourly rate:"));
+            let totalWage;
+            if (hoursWorked > 40) {
+                let overtimeHours = hoursWorked - 40;
+                totalWage = (40 * hourlyRate) + (overtimeHours * hourlyRate * 1.5);
+            } else {
+                totalWage = hoursWorked * hourlyRate;
+            }
+            console.log("Your total weekly wage is: $" + totalWage.toFixed(2));
+        }</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        23.Employee Bonus Calculation
+        Calculate a bonus based on years of service: 5% for 5-10 years, 10% for
+        10-20 years, and 15% for over 20 years. 
+    </h3>
+    <script>
+       function calculateBonus() {
+
+let yearsOfService = parseInt(prompt("Enter the number of years you have worked:"));
+
+let bonusPercentage;
+
+if (yearsOfService >= 5 && yearsOfService <= 10) {
+    bonusPercentage = 0.05;
+} else if (yearsOfService >= 10 && yearsOfService <= 20) {
+    bonusPercentage = 0.10;
+} else if (yearsOfService > 20) {
+    bonusPercentage = 0.15;
+} else {
+    bonusPercentage = 0;
+}
+
+let salary = parseFloat(prompt("Enter your annual salary:"));
+let bonusAmount = salary * bonusPercentage;
+alert("Your bonus is: Rs. " + bonusAmount.toFixed(2));
+}
+
+    </script>
+</body>
+</html>

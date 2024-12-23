@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>4.Elevator Capacity Check
+        Anelevator has a maximum capacity of 500 kg. Given the weight of
+        items entered, check if the elevator is overloaded.</h3>
+       <script>
+       function elevator() {
+           let people = Number(prompt("enter total number of people:"));
+           let arr = [];
+           for (let i = 0; i < people; i++) {
+               arr[i] = Number(prompt(`enter the weight of person ${i + 1}:`));
+           }
+           let sum = 0;
+           for (let j = 0; j < arr.length; j++) {
+               sum += arr[j];
+           }
+           if (sum > 500) {
+               console.log(`the elevator is overloded`);
+           }
+           else {
+               console.log(`the elevator is not overloaded`);
+           }
+       }
+    </script>
+</body>
+</html>

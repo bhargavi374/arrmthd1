@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        22.Tax Calculation
+        Calculate tax based on income: 10% for under $50,000, 20% for
+        $50,000-100,000, and 30% above $100,000. 
+    </h3>
+    <script>
+        function calculateTax() {
+    let income = parseFloat(prompt("Enter your annual income:"));
+    let taxAmount;
+    if (income < 50000) {
+        taxAmount = income * 0.10;
+    } else if (income <= 100000) {
+        taxAmount = income * 0.20;
+    } else {
+        taxAmount = income * 0.30;
+    }
+    console.log("Your tax amount is: Rs. " + taxAmount.toFixed(2));
+}
+    </script>
+</body>
+</html>

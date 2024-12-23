@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        7.Flight Price Calculator
+        Calculate ticket cost with discounts: 5% if booked over 30 days in
+         advance, 10% for business class, and 15% for premium members. 
+    </h3>
+    <script>
+        function calculateFlightCost() {
+
+let basePrice = parseFloat(prompt("Enter the base ticket price:"));
+let daysInAdvance = prompt("no of days in advance : ");
+let cls = prompt("Specify your class (economy,business,premium member) : ").toLowerCase();
+let discount = 0;
+
+if (daysInAdvance > 30 && cls === "economy") {
+    discount = basePrice * 0.05;
+}
+
+if (cls === "business") {
+    discount = basePrice * 0.10;
+}
+
+if (cls === "premium member") {
+    discount = basePrice * 0.15;
+}
+
+let finalPrice = basePrice - discount;
+
+console.log("The final price of your ticket is: Rs." + finalPrice.toFixed(2));
+}
+
+    </script>
+</body>
+</html>

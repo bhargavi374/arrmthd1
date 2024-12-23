@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        9.Shopping Bill Calculation
+ Add upitems from a shopping list and print the total bill.
+    </h3>
+    <script>
+         function calculateShoppingBill() {
+    let totalBill = 0;
+    let numItems = parseInt(prompt("No of items you buy : "));
+    for (let i = 0; i < numItems; i++) {
+        let itemPrice = parseFloat(prompt("Enter the price of item " + (i + 1) + ":"));
+        totalBill = totalBill + itemPrice;
+    }
+    console.log("The total bill is: $" + totalBill.toFixed(2));
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        10.Traffic Light Simulation
+        Given the current light color (Red, Yellow, Green), print the
+        appropriate action (Stop, Slow Down, Go). 
+    </h3>
+    <script>
+        function trafficLightAction() {
+    let lightColor = prompt("Enter the current traffic light color : ").toLowerCase();
+    if (lightColor === "red") {
+        console.log("Action: Stop");
+    } else if (lightColor === "yellow") {
+        console.log("Action: Slow Down");
+    } else if (lightColor === "green") {
+        console.log("Action: Go");
+    } else {
+        console.log("Invalid traffic light color.");
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        18.Movie Ticket Price Calculation
+ Calculate the price of a movie ticket with discounts: 10% for students
+ and 20%for seniors.
+    </h3>
+    <script>
+        function calculateMovieTicketPrice() {
+    let person = prompt("Are you a student/senior.citizen : ").toLowerCase();
+    let ticketPrice = 15;
+    if (person === "student") {
+        ticketPrice -= ticketPrice * 0.10;
+    }
+    if (person === "senior.citizen") {
+        ticketPrice -= ticketPrice * 0.20;
+    }
+    console.log("The final movie ticket price is: $" + ticketPrice.toFixed(2));
+}
+    </script>
+</body>
+</html>

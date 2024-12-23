@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> 25.Internet Usage Alert
+        Alert a user when they reach 80% and 100% of their monthly data
+        limit.</h3>
+        <script>
+            function internetUsageAlert() {
+    let dataLimit = parseFloat(prompt("Enter your monthly data limit (in GB):"));
+    let currentUsage = parseFloat(prompt("Enter your current data usage (in GB):"));
+    if (currentUsage >= dataLimit) {
+        console.log("Alert: You have used 100% of your data limit!");
+    } else if (currentUsage >= dataLimit * 0.80) {
+        console.log("Alert: You have used 80% of your data limit.");
+    } else {
+        console.log("You are using less than 80% of your data limit.");
+    }
+}
+        </script>
+</body>
+</html>

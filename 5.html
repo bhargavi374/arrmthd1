@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        5.E-commerce Order Validity
+        If a customer orders less than 5 items, print "Invalid order." If 5-10
+        items, print "Standard order," and for more than 10, print "Bulk
+        order."
+    </h3>
+    <script>
+        
+function orderValidation() {
+
+let order = Number(prompt("enter number of orders:"));
+if (order < 5) {
+    console.log(`invalid order`);
+}
+else if (order >= 5 && order <= 10) {
+    console.log(`standard order`);
+}
+else if (order > 10) {
+    console.log(`bulk order`);
+}
+}
+    </script>
+</body>
+</html>

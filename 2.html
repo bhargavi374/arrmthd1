@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>2.Temperature Advisory
+ Given the temperature in Celsius, provide weather advice: "Cold" for
+ under 10°C, "Moderate" for 10-25°C, and "Hot" for above 25°C.</h3>
+<script>
+ function temp() {
+    let temp = Number(prompt("enter the temprature:"));
+    if (temp < 10) {
+        console.log(cold);
+    }
+    else if (temp >= 10 && temp <= 25) {
+        console.log(moderate);
+    }
+    else if (temp > 25) {
+        console.log(hot);
+    }
+}
+</script>
+</body>
+</html>

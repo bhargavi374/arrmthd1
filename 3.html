@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>3.Discount Calculator
+ Astore offers discounts: 10% if the bill is above $100, and 20% if it's
+ above $200. Calculate the discount based on the input bill amount.</h3>
+
+<script>
+function discountCalculator() {
+    let total = Number(prompt("enter your total amount:"));
+    if (total < 100) {
+        console.log("no discount");
+    }
+    else if (total > 100 && total <= 200) {
+        console.log(`you get 10 % discount and the amount after discount is ${total - ((10 / 100) * total)} `);
+    }
+    else if (temp > 200) {
+        console.log(`you get 20 % discount and the amount after discount is ${total - ((20 / 100) * total)} `);
+    }
+}
+</script>
+
+</body>
+</html>

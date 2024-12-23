@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        6.Account Balance Status
+        Given a bank balance, display "Low Balance" for less than $100,
+        "Healthy" for $100-500, and "High Balance" for over $500. 
+    </h3>
+    <script>
+        function balance() {
+    let user = prompt("enter your bank balance in $ :")
+    if (user < 100) {
+        console.log("your balance is low.")
+    }
+    else if (user >= 100 && user <= 500) {
+        console.log("your balance is healthy.")
+    }
+    else {
+        console.log("your balance is high.")
+    }
+
+}
+    </script>
+</body>
+</html>

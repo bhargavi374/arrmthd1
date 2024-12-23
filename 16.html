@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>16.Calculate Train Fare
+        Given distance and class of travel (Economy, Business), calculate the
+        train fare with different rates per km.
+       </h3>
+       <script>
+        function calculateTrainFare() {
+
+let distance = parseFloat(prompt("Enter the distance you are traveling in kilometers:"));
+let travelClass = prompt("Enter your travel class (Economy or Business):").toLowerCase();
+
+let farePerKm;
+
+if (travelClass === "economy") {
+    farePerKm = 0.5;
+} else if (travelClass === "business") {
+    farePerKm = 1;
+} else {
+    console.log("Invalid class.");
+    return;
+}
+
+let totalFare = distance * farePerKm;
+alert("Your total train fare is: $" + totalFare.toFixed(2));
+}
+       </script>
+</body>
+</html>

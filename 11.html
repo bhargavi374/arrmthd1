@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        11.Electricity Bill Calculation
+ Calculate an electricity bill based on usage: $0.10 per kWh for up to
+ 100 kWh, $0.15 for 101-200 kWh, and $0.20 for above 200 kWh.
+    </h3>
+    <script>
+      function calculateElectricityBill() {
+    let usage = parseFloat(prompt("Enter your electricity usage in kWh:"));
+    let billAmount;
+    if (usage <= 100) {
+        billAmount = usage * 0.10;
+    } else if (usage <= 200) {
+        billAmount = (100 * 0.10) + ((usage - 100) * 0.15);
+    } else {
+        billAmount = (100 * 0.10) + (100 * 0.15) + ((usage - 200) * 0.20);
+    }
+    console.log("Your electricity bill is: $" + billAmount.toFixed(2));
+}  
+    </script>
+</body>
+</html>

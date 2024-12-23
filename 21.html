@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        classroom seating Arrangement
+    </h3>
+    <script>
+    function calculateSeatingArrangement() {
+        let students = parseInt(prompt("Enter the number of students:"));
+        let seatsPerRow = parseInt(prompt("Enter the number of seats per row:"));
+        let rowsNeeded = Math.ceil(students / seatsPerRow);
+    
+        console.log("You will need " + rowsNeeded + " rows.");
+    }
+    </script>
+</body>
+</html>
